@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,43 @@
 
 .read-the-docs {
   color: #888;
+} */
+
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.headbody
+{
+  display: flex;
+  padding: 0 10px 1rem 10px;
+  justify-content: space-between;
+}
+.lbody
+{
+  display: flex;
+  padding: 0 10px 1rem 10px;
+  justify-content: space-between; 
+  align-items: center;
+
+}
+
+.cName
+{
+  flex-flow: 1;
+}
+
+#home 
+{
+
+  flex-shrink: 1;
+}
+.icon
+{
+  display: block;
+  width: 50%;
 }
