@@ -1,11 +1,11 @@
-import Header from "./screens/Header"
+import Login from "./screens/LOGINPAGE"
 import React from "react"
 // import './App.css'
 
 function App() {
   return (
     <>
-     <Header />
+      <Login />
     </>
   )
 }
