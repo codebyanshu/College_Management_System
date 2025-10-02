@@ -8,14 +8,16 @@
 
 .headbody
 {
-  height: 12vh;
+  height: 8vh;
   padding: 0.2rem 1.2rem;
   display: grid;
   align-content: center;
   grid-template-columns: repeat(2,1fr);
+  position: sticky;
+  top: 0px;
   .nav-bar ul {
     height: 100%;
-    font-size: 2rem ;
+    font-size: 1rem ;
     align-items: center;
     display: flex;
     justify-content: flex-end;
@@ -23,15 +25,18 @@
   }
   .cName h1
   {
-    font-size: 5rem;
-    font-weight: 900;
+    margin-top: 8px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: 'Segoe UI';
+    color: #2877bd;
   }
 
 }
 
 .loginBody
 {
-  height: 88vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -18,34 +18,37 @@ function Login() {
 
 function Login_head() {
   return (
-    <div className="headbody" style={{ backgroundColor: "#FFCB61"}}>
-      <div className="cName">
-        <h1>LKCTC</h1>
+    <nav>
+      <div
+        className="headbody"
+        style={{ backgroundColor: "#FFCB61", border: "2px solid #FFC107" }}
+      >
+        <div className="cName">
+          <h1 className="mt-4 mt-sm-0">
+            <a className="nav-link" href="#">
+              LKCTC
+            </a>
+          </h1>
+        </div>
+        <div className="nav-bar">
+          <ul className="nav nav-underline">
+            <li className="nav-item px-3">
+              <a className="nav-link p-0" href="#">
+                About
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link p-0" href="#">
+                Course
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link p-0">Contact Us</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div className="nav-bar">
-        <ul className="nav nav-underline">
-          <li className="nav-item">
-            <a className="nav-link active " aria-current="page" href="#">
-              Home
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link link-secondary" href="#">
-              About
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link link-secondary" href="#">
-              Course
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link link-secondary">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-      <div id="menu-btn" className="fas fa-bars"></div>
-    </div>
+    </nav>
   );
 }
 function Login_body() {
@@ -58,30 +61,37 @@ function Login_body() {
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-12 d-flex justify-content-end">
+          <div class="col-11 d-flex justify-content-end">
             <div
-              className="login-form shadow-lg p-3 mb-5 bg-body-warning border border-warning border-5"
+              className="login-form shadowd-lg px-5 pb-5 mb-3 bg-body-warning border border-warning border-5"
               style={style}
             >
-              <h2>Login</h2>
+              <h2
+                className="h-25 text-center pt-3"
+                style={{ color: "#333A73" }}
+              >
+                Login
+              </h2>
               <form action="">
                 <input
                   type="text"
                   placeholder="Username"
-                  className="box my-2"
+                  className="box my-2 border border-2 border-warning rounded-3 p-2 w-100"
+                  style={{ color: "black", backgroundColor: "#FDB44B" }}
                 />
                 <br />
 
                 <input
                   type="password"
                   placeholder="Password"
-                  className="box my-2"
+                  className="box my-2 border border-2 border-warning rounded-3 p-2 w-100 mb-3"
+                  style={{ color: "black", backgroundColor: "#FDB44B" }}
                 />
                 <br />
                 <input
                   type="submit"
                   value="Login"
-                  className="btn btn-primary my-2"
+                  className="btn btn-primary my-2 w-100 p-2 mb-4"
                 />
                 <p>
                   Forget Password? <a href="#">Click Here</a>
