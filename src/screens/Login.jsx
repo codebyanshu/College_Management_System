@@ -52,7 +52,7 @@ function Login_body() {
 
 
   return (
-    <>
+    <div className="loginBody">
       <div className="icon">
         <h3>LKTC</h3>
       </div>
@@ -94,7 +94,7 @@ function Login_body() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
       export default Login;

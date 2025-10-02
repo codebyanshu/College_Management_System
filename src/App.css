@@ -5,25 +5,43 @@
   box-sizing: border-box;
 }
 
+
 .headbody
 {
+  height: 12vh;
   padding: 0.2rem 1.2rem;
   display: grid;
+  align-content: center;
   grid-template-columns: repeat(2,1fr);
   .nav-bar ul {
     height: 100%;
+    font-size: 2rem ;
     align-items: center;
     display: flex;
     justify-content: flex-end;
     gap: 2rem;
-}
+  }
+  .cName h1
+  {
+    font-size: 5rem;
+    font-weight: 900;
+  }
+
 }
 
-.lbody
+.loginBody
 {
+  height: 88vh;
   display: flex;
-  padding: 0 10px 1rem 10px;
-  justify-content: space-between; 
   align-items: center;
+  justify-content: center;
 
+  .container
+  {
+    flex-grow: 1;
+  }
+  .icon
+  {
+    flex-grow: 2;
+  }
 }
