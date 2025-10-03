@@ -1,16 +1,22 @@
 import React from "react";
+<<<<<<< HEAD
 import img from "../assets/Lkc.png"
+=======
+import "./Loginstyle.css"
+
+>>>>>>> 387bd8c11f36f02c53bca02c9d1def646719f2d8
 let style = {
-  backgroundColor: "rgb(235, 170, 58)",
+  backgroundColor: "#f0f8ff",
   borderRadius: "20px",
 };
 
 function Login() {
   return (
     <>
-    <div style={{backgroundColor : "#FFDE63"}}>
-      <Login_head />
-      <Login_body />
+      <div style={{ backgroundColor: "#f0f8ff" }}>
+        <Login_head />
+        {/* <Login_body /> */}
+        <Logincontent />
       </div>
     </>
   );
@@ -109,4 +115,34 @@ function Login_body() {
     </div>
   );
 }
-      export default Login;
+
+
+function Logincontent() {
+  return (
+    <div className="container">
+      <div className="collageImage">
+        <h1>LKCTC</h1>
+      </div>
+      <div className="loginSection">
+          <div>
+            <div>
+              <h2>  Login </h2>
+              <form action="">
+                <input type="text" placeholder="Username" />
+                <input  type="password"  placeholder="Password"/>
+                <input  type="submit"  value="Login" />
+                <p>
+                 Forget Password? <a href="#">Click Here</a>
+                </p>
+                <p>
+                  Don't have an account? <a href="#">Create one</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  );
+}
+
+export default Login;
