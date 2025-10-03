@@ -1,5 +1,5 @@
 import React from "react";
-
+import img from "../assets/Lkc.png"
 let style = {
   backgroundColor: "rgb(235, 170, 58)",
   borderRadius: "20px",
@@ -21,9 +21,11 @@ function Login_head() {
     <nav>
       <div
         className="headbody"
-        style={{ backgroundColor: "#FFCB61", border: "2px solid #FFC107" }}
-      >
+        style={{ backgroundColor: "#FFCB61", border: "2px solid #FFC107" }}>
         <div className="cName">
+          <div className="container lkc-img">
+            <img src={img} alt="lkc" />
+          </div>
           <h1 className="mt-4 mt-sm-0">
             <a className="nav-link" href="#">
               LKCTC
