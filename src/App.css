@@ -17,17 +17,18 @@
   top: 0px;
   .nav-bar ul {
     height: 100%;
+    width: 100%;
     font-size: 1rem ;
     align-items: center;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     gap: 2rem;
   }
-  .cName{
+  /* .cName{
     display: grid;
     grid-template-columns: 0.5fr 2fr;
-    /* gap: 1rem; */
-  }
+    /* gap: 3rem; */
+  } */
   .cName h1
   {
     margin-top: 8px;
@@ -38,7 +39,7 @@
     
   }
 
-}
+
 
 .container
 {

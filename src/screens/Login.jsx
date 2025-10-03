@@ -1,10 +1,6 @@
 import React from "react";
-<<<<<<< HEAD
-import img from "../assets/Lkc.png"
-=======
 import "./Loginstyle.css"
 
->>>>>>> 387bd8c11f36f02c53bca02c9d1def646719f2d8
 let style = {
   backgroundColor: "#f0f8ff",
   borderRadius: "20px",
@@ -15,7 +11,7 @@ function Login() {
     <>
       <div style={{ backgroundColor: "#f0f8ff" }}>
         <Login_head />
-        {/* <Login_body /> */}
+        <Login_body />
         <Logincontent />
       </div>
     </>
@@ -24,37 +20,33 @@ function Login() {
 
 function Login_head() {
   return (
-    <nav>
-      <div
-        className="headbody"
-        style={{ backgroundColor: "#FFCB61", border: "2px solid #FFC107" }}>
+    <nav
+      className="headbody"
+      style={{ backgroundColor: "#FFCB61", border: "2px solid #FFC107" }}
+    >
         <div className="cName">
-          <div className="container lkc-img">
-            <img src={img} alt="lkc" />
-          </div>
           <h1 className="mt-4 mt-sm-0">
             <a className="nav-link" href="#">
               LKCTC
             </a>
           </h1>
         </div>
-        <div className="nav-bar">
-          <ul className="nav nav-underline">
-            <li className="nav-item px-3">
-              <a className="nav-link p-0" href="#">
-                About
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link p-0" href="#">
-                Course
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link p-0">Contact Us</a>
-            </li>
-          </ul>
-        </div>
+      <div className="nav-bar">
+        <ul className="nav nav-underline">
+          <li className="nav-item px-3">
+            <a className="nav-link p-0" href="#">
+              About
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link p-0" href="#">
+              Course
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link p-0">Contact Us</a>
+          </li>
+        </ul>
       </div>
     </nav>
   );
@@ -67,9 +59,9 @@ function Login_body() {
       <div className="icon">
         <h3>LKTC</h3>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-11 d-flex justify-content-end">
+      <div className="container">
+        <div className="row">
+          <div className="col-11 d-flex justify-content-end">
             <div
               className="login-form shadowd-lg px-5 pb-5 mb-3 bg-body-warning border border-warning border-5"
               style={style}
