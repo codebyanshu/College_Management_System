@@ -11,8 +11,7 @@ function Login() {
     <>
       <div style={{ backgroundColor: "#f0f8ff" }}>
         <Login_head />
-        {/* <Login_body /> */}
-        <Logincontent />
+        <Login_body />
       </div>
     </>
   );
@@ -54,56 +53,46 @@ function Login_head() {
   );
 }
 function Login_body() {
-
-
   return (
-    <div className="loginBody">
+    <div className="loginBody" style={{height : "92vh"}}>
       <div className="icon">
         <h3>LKTC</h3>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-11 d-flex justify-content-end">
-            <div
-              className="login-form shadowd-lg px-5 pb-5 mb-3 bg-body-warning border border-warning border-5"
-              style={style}
-            >
-              <h2
-                className="h-25 text-center pt-3"
-                style={{ color: "#333A73" }}
-              >
-                Login
-              </h2>
-              <form action="">
-                <input
-                  type="text"
-                  placeholder="Username"
-                  className="box my-2 border border-2 border-warning rounded-3 p-2 w-100"
-                  style={{ color: "black", backgroundColor: "#FDB44B" }}
-                />
-                <br />
+      <div class="d-flex justify-content-end ">
+        <div
+          className="loginSection col-3 pb-2"
+        >
+          <h2 className="text-center pt-1 " style={{ color: "#333A73" }}>
+            Login
+          </h2>
+          <form action="/" className="login-form px-4">
+            <input
+              type="text"
+              placeholder="Username"
+              className="box mb-0 border border-2 border-warning rounded-3 py-2 px-3 w-100"
+              style={{ color: "black", backgroundColor: "#FDB44B" }}
+            />
+            <br />
 
-                <input
-                  type="password"
-                  placeholder="Password"
-                  className="box my-2 border border-2 border-warning rounded-3 p-2 w-100 mb-3"
-                  style={{ color: "black", backgroundColor: "#FDB44B" }}
-                />
-                <br />
-                <input
-                  type="submit"
-                  value="Login"
-                  className="btn btn-primary my-2 w-100 p-2 mb-4"
-                />
-                <p>
-                  Forget Password? <a href="#">Click Here</a>
-                </p>
-                <p>
-                  Don't have an account? <a href="#">Create one</a>
-                </p>
-              </form>
-            </div>
-          </div>
+            <input
+              type="password"
+              placeholder="Password"
+              className="box my-0 border border-2 border-warning rounded-3 p-2 w-100 "
+              style={{ color: "black", backgroundColor: "#FDB44B" }}
+            />
+            <br />
+            <input
+              type="submit"
+              value="Login"
+              className="btn btn-primary m-0 w-100 p-2 mb-4"
+            />
+            <p>
+              Forget Password? <a href="#">Click Here</a>
+            </p>
+            <p>
+              Don't have an account? <a href="#">Create one</a>
+            </p>
+          </form>
         </div>
       </div>
     </div>
@@ -111,32 +100,5 @@ function Login_body() {
 }
 
 
-function Logincontent() {
-  return (
-    <div className="container">
-      <div className="collageImage">
-        <h1>LKCTC</h1>
-      </div>
-      <div className="loginSection">
-          <div>
-            <div>
-              <h2>  Login </h2>
-              <form action="">
-                <input type="text" placeholder="Username" />
-                <input  type="password"  placeholder="Password"/>
-                <input  type="submit"  value="Login" />
-                <p>
-                 Forget Password? <a href="#">Click Here</a>
-                </p>
-                <p>
-                  Don't have an account? <a href="#">Create one</a>
-                </p>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-  );
-}
 
 export default Login;
