@@ -8,8 +8,8 @@
 
 .headbody
 {
-  height: 8vh;
-  padding: 0.2rem 1.2rem;
+  height: 3rem;
+  padding: 1rem 1.2rem;
   display: grid;
   align-content: center;
   grid-template-columns: repeat(2,1fr);
@@ -34,19 +34,29 @@
 
 }
 
-.loginBody
+.container
 {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  .container
-  {
-    flex-grow: 1;
+  background-color: aliceblue;
+  display: grid;
+  height: calc(100vh - 3rem); 
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 1fr;
+  align-content: center;
+  input{
+    display: block;
+    margin: 2rem 0; 
   }
-  .icon
+  .collageImage{
+    background-color: #f0f8ff;
+    align-content: center;
+    text-align: center;
+    box-shadow: 0.1rem 0 2rem rgb(65, 105, 225 , 0.2) ;
+  }
+  .loginSection
   {
-    flex-grow: 2;
+    justify-items: center;
+    align-content: center;
+    box-shadow: -0.1rem 0 2rem rgb(65, 105, 225 , 0.2);
+    padding: 10px;
   }
 }
