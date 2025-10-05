@@ -1,7 +1,9 @@
-import React from "react";;
+import React from "react";import NavBar from "./NavBar";
+;
 const LoginPage = () => {
   return (
     <>
+    <NavBar userlogo = {false}/>
       <section class="bg-gray-50 dark:bg-gray-900 max-sm:mt-[5rem] mt-[2rem] max-sm:h-[83vh] h-[100vh] " >
         <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-full lg:py-0">
           <a
