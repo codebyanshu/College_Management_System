@@ -7,8 +7,8 @@ const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900 h-14 flex items-center justify-between px-4">
-      <a href="/" className="text-3xl text-blue-400 font-bold font-mono">
+    <nav className="bg-[#125BFB] flex  justify-between items-center py-5 px-3 rounded-b-sm border border-b-white">
+      <a href="/" className="text-3xl text-white font-bold font-mono">
         LKCTC
       </a>
       <button
@@ -21,19 +21,19 @@ const NavBar = (props) => {
       <div
         className={`${
           isOpen ? "block" : "hidden"
-        } absolute top-16 left-0 w-full bg-gray-900 md:bg-transparent md:static md:w-auto md:flex items-center gap-[2rem]`}
+        } absolute top-16 left-0 w-full bg-white md:bg-transparent md:static md:w-auto md:flex items-center gap-[2rem]`}
       >
         <ul
-          className="flex flex-col font-medium p-4 md:p-0 border border-gray-700 md:border-0 
-          bg-gray-900 md:bg-transparent md:flex-row md:space-x-8 md:mt-0"
+          className="flex flex-col font-medium px-5 py-4 md:p-0  border-0 
+          bg-[rgba(36,100,219,0.94)] md:bg-transparent md:flex-row md:space-x-8 md:mt-0"
         >
           <li>
             <a
               href="#"
               className="block py-2 px-3 rounded-sm md:p-0 
-              text-blue-500 font-semibold 
-              underline underline-offset-4 decoration-blue-500
-              hover:text-blue-700 hover:underline hover:underline-offset-4 hover:decoration-blue-500"
+              text-white font-semibold 
+              underline underline-offset-4 decoration-white
+              hover:text-white hover:underline hover:underline-offset-4 hover:decoration-white"
             >
               Home
             </a>
@@ -43,7 +43,7 @@ const NavBar = (props) => {
             <a
               href="#"
               className="block py-2 px-3 rounded-sm md:p-0 
-              text-gray-300 hover:text-blue-400 hover:underline hover:underline-offset-4 hover:decoration-blue-500"
+              text-gray-300 hover:text-white hover:underline hover:underline-offset-4 hover:decoration-[#125BFB] "
             >
               About
             </a>
@@ -53,7 +53,7 @@ const NavBar = (props) => {
             <a
               href="#"
               className="block py-2 px-3 rounded-sm md:p-0 
-              text-gray-300 hover:text-blue-400 hover:underline hover:underline-offset-4 hover:decoration-blue-500"
+              text-gray-300 hover:text-white hover:underline hover:underline-offset-4 hover:decoration-[#125BFB] "
             >
               Courses
             </a>
@@ -62,8 +62,8 @@ const NavBar = (props) => {
           <li>
             <a
               href="#"
-              className="block py-2 px-3 rounded-sm md:p-0 
-              text-gray-300 hover:text-blue-400 hover:underline hover:underline-offset-4 hover:decoration-blue-500"
+             className="block py-2 px-3 rounded-sm md:p-0 
+              text-gray-300 hover:text-white hover:underline hover:underline-offset-4 hover:decoration-[#125BFB] "
             >
               Academics
             </a>
@@ -73,14 +73,16 @@ const NavBar = (props) => {
             <a
               href="#"
               className="block py-2 px-3 rounded-sm md:p-0 
-              text-gray-300 hover:text-blue-400 hover:underline hover:underline-offset-4 hover:decoration-blue-500"
+              text-gray-300 hover:text-white hover:underline hover:underline-offset-4 hover:decoration-[#125BFB] "
             >
               Contact
             </a>
           </li>
         </ul>
        {props.userlogo? <UserLogo/> : <LoginButton/> }
+       
       </div>
+      
 
     </nav>
   );
