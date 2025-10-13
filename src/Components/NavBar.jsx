@@ -7,7 +7,7 @@ const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[#125BFB] flex  justify-between items-center py-5 px-3 rounded-b-sm border border-b-white">
+    <nav className="bg-[#125BFB] flex  justify-between items-center py-5 px-3 rounded-b-sm border border-b-white sticky top-0">
       <a href="/" className="text-3xl text-white font-bold font-mono">
         LKCTC
       </a>

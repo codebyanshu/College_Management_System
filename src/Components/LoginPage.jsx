@@ -4,17 +4,17 @@ const LoginPage = () => {
   return (
     <>
     <NavBar userlogo = {false}/>
-      <section class="bg-white max-sm:bg-white max-sm:pt-[5rem]  max-sm:h-[83vh] h-[100vh] " >
-        <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-full lg:py-0">
+      <section class="bg-white max-sm:bg-white  pt-3  max-sm:h-[83vh] h-[100vh] " >
+        <div class="flex flex-col items-center justify-center px-6 py-8 ">
           <a
             href="#"
             class="flex items-center mb-6 text-3xl font-semibold text-gray-900"
           >
-            <p className="text-shadow-lg text-black">
+            <p className="text-shadow-[2px_1px_2px_rgba(0,0,0,0.5)] text-black">
               Student Login
             </p>
           </a>
-          <div class="w-full  rounded-lg  border-transparent md:mt-0 sm:max-w-md xl:p-0 shadow-2xl shadow-black">
+          <div class="w-full  rounded-[20px]  border-transparent md:mt-0 sm:max-w-md xl:p-0 shadow-2xl shadow-black">
             <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
               <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl ">
                 Sign in to your account
