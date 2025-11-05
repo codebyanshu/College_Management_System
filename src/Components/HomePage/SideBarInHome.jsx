@@ -49,15 +49,7 @@ const SideBarInHome = () => {
                   <span className="ml-3">Time Table</span>
                 </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  className="flex items-center p-2 pl-12 w-full text-base text-white rounded-lg transition duration-75 group hover:bg-blue-800"
-                >
-                  <RiProfileFill className="text-lg" />
-                  <span className="ml-3">Attendance</span>
-                </a>
-              </li>
+             
               <li>
                 <a
                   href="#"
@@ -111,6 +103,17 @@ const SideBarInHome = () => {
               </li>
             </ul>
           </li>
+
+           <li>
+            <a
+              href="#"
+              className="flex items-center p-3 text-base font-semibold text-white rounded-xl hover:bg-blue-800 group"
+            >
+              <IoIosDocument className="text-2xl" />
+              <span className="ml-4">Attendence</span>
+            </a>
+          </li>
+
           <li>
             <a
               href="#"

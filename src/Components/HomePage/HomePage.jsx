@@ -3,6 +3,8 @@ import NavBar from "../NavBar";
 import UserLogo from "../userLogo";
 import SideBarInHome from "./SideBarInHome";
 import HomeBody from "./HomeBody";
+import Attendence from "../Attendence/Attendence";
+import attendanceData from "../../data/attendanceData";
 
 const HomePage = () => {
   return (
@@ -10,9 +12,12 @@ const HomePage = () => {
       <NavBar userlogo={true} />
       <div className="grid grid-cols-1 md:grid-cols-[0.7fr_4fr]  min-h-screen">
         <SideBarInHome />
-        <HomeBody />
+       
+
+          <Attendence />
+        </div>
       </div>
-    </div>
+
   );
 };
 

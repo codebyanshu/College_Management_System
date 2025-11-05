@@ -7,9 +7,9 @@ const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[#125BFB] flex  justify-between items-center py-5 px-3  border sticky top-0 border-b-black">
+    <nav className="bg-[#125BFB] flex  justify-between items-center py-5 px-3  border sticky top-0 border-b-black  z-50">
       <a href="/" className="text-3xl text-white font-bold font-mono">
-        LKCTC
+        TEMP
       </a>
       <button
         onClick={() => setIsOpen(!isOpen)}
